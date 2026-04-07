@@ -21,17 +21,19 @@ body {
     margin: auto;
 }
 
-.logo{
+.logo {
     position: relative;
     top: 6px;
 }
 
 .navbar {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255);
     padding-right: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .nav-item {
@@ -40,7 +42,8 @@ body {
 }
 
 .nav-item a {
-    padding: 15px;
+    padding: 10px;
+   margin: 10px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 500;
@@ -49,11 +52,10 @@ body {
 }
 
 .nav-item a:hover {
-    height: auto;
     background-color: black;
     color: white;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .hero-sec {
@@ -63,36 +65,36 @@ body {
     align-items: center;
     text-align: center;
     padding: 60px 20px;
-    font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.hero-text h1{
+.hero-text h1 {
     margin-bottom: 10px;
 }
 
-.hero-text h2{
+.hero-text h2 {
     font-size: larger;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: aquamarine;
-    
+
 }
 
 
-.hero-sec{
-    font-size: 2rem;
+.hero-sec {
+    font-size: 1rem;
     margin-bottom: 15px;
 }
 
 .hero-sec img {
-    padding-top: 100px;
+    padding-top: 80px;
+    width: 400px;
 }
 
 .hero-sec p {
     max-width: 650px;
     margin-bottom: 50px;
     font-weight: lighter;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 30px;
 }
 
@@ -178,23 +180,23 @@ body {
 }
 
 .sec-three h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     padding-bottom: 35px;
-     max-width: 460px;
+    max-width: 400px;
 }
 
 .sec-three p {
-    max-width: 460px;
+    max-width: 400px;
     padding-bottom: 35px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .sec-three h2 {
-    font-size: 10rem;
+    font-size: 4rem;
 }
 
 .sec-three h3 {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* desktop */
@@ -203,6 +205,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
+        font-size: 2rem;
     }
 
     .hero-text {
@@ -210,27 +213,46 @@ body {
         text-align: left;
     }
 
-    .hero-image {
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+
+    .hero-image img{
         flex: 1;
         padding-left: 150px;
+        width: 750px;
     }
 
-    .sec-two-text{
+    .navbar{
+        flex-direction: row;
+    }
+
+    .sec-two-text {
         flex: 1;
     }
 
-    .cards{
-             flex-direction: row;
+    .cards {
+        flex-direction: row;
         justify-content: space-between;
         text-align: left;
     }
 
-    .sec-three h1{
+    .sec-three h1 {
+        font-size: 3rem;
         max-width: 800px;
     }
 
-        .sec-three p{
+    .sec-three p {
+        font-size: 2rem;
         max-width: 800px;
+    }
+
+    .sec-three h2 {
+        font-size: 10rem;
+    }
+
+    .sec-three h3 {
+        font-size: 2rem;
     }
 }
 
